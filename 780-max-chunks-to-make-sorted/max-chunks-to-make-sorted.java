@@ -1,6 +1,6 @@
 class Solution {
     public int maxChunksToSorted(int[] arr) {
-        int count=1;
+        int count=0;
       int sum=0;
       int arrSum=0;
         int n = arr.length;
@@ -11,6 +11,6 @@ class Solution {
         if(arrSum==sum)count++;
       }
        
-        return count-1;
+        return count;
     }
 }
