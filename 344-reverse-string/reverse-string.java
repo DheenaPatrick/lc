@@ -1,9 +1,9 @@
-import java.util.*;
+
 class Solution {
     public void reverseString(char[] s) {
-        int n = s.length;
+        int p2 = s.length-1;
         int p1=0;
-        int p2=n-1;
+        
 
         while(p1<p2)
         {
