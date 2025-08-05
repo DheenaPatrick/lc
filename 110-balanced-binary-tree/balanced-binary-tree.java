@@ -19,15 +19,15 @@ class Solution {
 
         int left = maxDepth(root.left);
         int right = maxDepth(root.right);
-        if(left==-1||right==-1)return -1;
-        if(Math.abs(left-right)>1)return -1;
+        // if(left==-1||right==-1)return -1;
+        if(Math.abs(left-right)>1)return -100;
         return 1+ Math.max(left,right);
 
 
     }
     public boolean isBalanced(TreeNode root) {
         
-        if(maxDepth(root)==-1)return false;
+        if(maxDepth(root)<0)return false;
         return true;
     }
 }
